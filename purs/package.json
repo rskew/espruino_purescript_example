@@ -1,0 +1,18 @@
+{
+  "name": "hello_world_espruino_purescript",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "spago build && ./node_modules/rollup/dist/bin/rollup -c",
+    "patch": "sed -i 's/for (var \\([a-z]\\) in \\([a-z]*\\)) {/for (var \\1 in (\\2 || [])) {/g' dist/bundle.js",
+    "flash": "./node_modules/espruino/bin/espruino-cli.js --no-ble -p /dev/ttyUSB0 -b 115200 -m --storage .boot0:dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "espruino": "^0.1.45",
+    "rollup": "^1.32.1",
+    "rollup-plugin-commonjs": "^10.1.0"
+  }
+}
