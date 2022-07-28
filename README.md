@@ -7,7 +7,7 @@ Install dependencies:
 nix develop
 npm ci
 ```
-Build Purescript code and bundle into single bundled file:
+Build Purescript code and bundle into single javascript file:
 ``` sh
 npm run build
 ```
