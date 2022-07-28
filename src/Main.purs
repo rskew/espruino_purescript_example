@@ -13,11 +13,9 @@ foreign import ledOff :: Effect Unit
 
 main :: Effect Unit
 main = launchAff_ do
-  liftEffect $ Console.log "Hello from purescript aff"
+  liftEffect $ Console.log "Hello from Purescript"
   liftEffect $ Console.log "Pin on"
   liftEffect $ ledOn
   delay $ Milliseconds 2000.0
   liftEffect $ Console.log "Pin off"
   liftEffect $ ledOff
-  delay $ Milliseconds 2000.0
-  liftEffect $ Console.log "End Aff hello howdy hey"

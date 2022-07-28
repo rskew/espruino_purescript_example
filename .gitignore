@@ -1,1 +1,13 @@
-espruino_2v14.111_esp32
+/bower_components/
+/node_modules/
+/.pulp-cache/
+/output/
+/generated-docs/
+/.psc-package/
+/.psc*
+/.purs*
+/.psa*
+/.spago
+dist
+
+espruino_2v14.125_esp32

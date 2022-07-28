@@ -10,8 +10,12 @@
       in rec {
         devShell = pkgs.mkShell {
           buildInputs = [
+            pkgs.spago
+            pkgs.purescript
+            pkgs.nodejs
             pkgs.esptool
             pkgs.screen
+            pkgs.wget
           ];
         };
       });
