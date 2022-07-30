@@ -19,7 +19,7 @@ Download Espruino firmware and unpack:
 ``` sh
 npm run download-firmware
 ```
-Flash ESP32 with Espruino firmware:
+Flash ESP32 with Espruino firmware (NOTE: you'll need to update the filenames in the `flash-firmware` script in package.json, as the version changes frequently and older versions of "bootloader.bin" and "partitions_espruino.bin" are not available):
 ``` sh
 npm run flash-firmware
 ```
